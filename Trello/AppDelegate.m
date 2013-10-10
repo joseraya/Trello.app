@@ -22,6 +22,9 @@
     [[webview mainFrame] loadRequest:requestObj];
 }
 
-
+- (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
+}
 
 @end
